@@ -9,6 +9,10 @@ html {
     margin: 0px;
 }
 
+body {
+    position: relative;
+}
+
 /* HEADER */
 .header {
     width: 100%;
@@ -214,7 +218,7 @@ html {
 }
 
 .menu tr {
-    height: 50px;
+    height: 70px;
 }
 
 .menu tr:nth-child(1) {
@@ -227,4 +231,76 @@ html {
     width: 75%;
     border-collapse: collapse;
     margin-top: 30px;
+}
+
+/* TABLE */
+.green__tea {
+    text-align: right;
+    background-image: url(../img/greentea.jpg);
+}
+
+.black__tea {
+    text-align: center;
+    background-image: url(../img/blacktea.jpg);
+}
+
+.olong__tea {
+    background-image: url(../img/olongtea.jpg);
+}
+
+.fruit__tea {
+    text-align: center;
+    background-image: url(../img/fruit.jpg);
+}
+
+.milk__tea {
+    text-align: center;
+    background-image: url(../img/milktea.png);
+}
+
+.green__tea,
+.olong__tea,
+.fruit__tea {
+    background-size: cover;
+}
+
+.black__tea,
+.milk__tea {
+    background-size: auto;
+}
+
+/* SCROLL */
+.popup-scroll-top {
+   position: fixed;
+    right: 100px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 120, 120, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.popup-scroll-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: bisque;
+    transition: all 0.5s;
+}
+
+.popup-scroll-top:hover a {
+    color: black;
+}
+
+.popup-scroll-top:hover {
+    transform: translateY(-10px);
+    background-color: rgba(231, 120, 120, 1);
 }
